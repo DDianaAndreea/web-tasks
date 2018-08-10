@@ -22,11 +22,11 @@ export default class Users extends Component {
     };
 
     render() {
-        // if (!sessionStorage.getItem('token')) {
-        //     return <Redirect to={'/login'}/>
-        // }
+         if (!sessionStorage.getItem('token')) {
+             return <Redirect to={'/login'}/>
+         }
 
-        // const {users} = this.state;
+         const {users} = this.state;
 
         return (
             <Fragment>
